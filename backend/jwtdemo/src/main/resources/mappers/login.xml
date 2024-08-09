@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.ict.jwtdemo.login.MemberLoginDAO">
+    <!-- 사용자 이름으로 사용자 조회 -->
+    <select id="findByEmail" parameterType="String" resultType="membervo">
+        SELECT memno, email,nickname, password, rolecd FROM tbmember WHERE email = #{email}
+    </select>
+
+    <insert id="registerMember" parameterType="membervo">
+        INSERT INTO tbmember (memno, email, password, nickname, name, gendercd, birthymd, entymd, loccd, imgname,categcd, phonenum, credt, upddt,rolecd) VALUES (seq_memno.nextVal, #{email}, #{password}, #{nickname}, #{name}, #{gendercd}, #{birthymd}, TO_CHAR(sysdate, 'YYYYMMDD'), #{loccd}, 'default.png', #{categcd}, #{phonenum}, sysdate, sysdate,'M')
+    </insert>
+
+
+    <update id="updateProfile" parameterType="membervo">
+        UPDATE tbmember
+        SET
+        nickname = #{nickname},
+        categcd = #{categcd},
+        password = #{password},
+        loccd = #{loccd}
+        WHERE memno = #{memno}
+    </update>
+
+</mapper>
