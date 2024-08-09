@@ -1,4 +1,4 @@
-package kr.co.ict.jwtdemo.jwt;
+package kr.co.ict.jwtdemo.member.jwt;
 
 import java.io.IOException;
 import org.springframework.security.core.AuthenticationException;

@@ -1,4 +1,4 @@
-package kr.co.ict.jwtdemo.jwt;
+package kr.co.ict.jwtdemo.member.jwt;
 
 
 import java.util.List;

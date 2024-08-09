@@ -1,4 +1,4 @@
-package kr.co.ict.jwtdemo.login;
+package kr.co.ict.jwtdemo.member.jwt;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

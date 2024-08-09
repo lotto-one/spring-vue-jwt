@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="kr.co.ict.jwtdemo.login.MemberLoginDAO">
+<mapper namespace="kr.co.ict.jwtdemo.member.login.MemberLoginDAO">
     <!-- 사용자 이름으로 사용자 조회 -->
     <select id="findByEmail" parameterType="String" resultType="membervo">
         SELECT memno, email,nickname, password, rolecd FROM tbmember WHERE email = #{email}

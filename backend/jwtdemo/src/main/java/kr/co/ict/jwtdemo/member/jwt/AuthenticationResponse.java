@@ -1,4 +1,4 @@
-package kr.co.ict.jwtdemo.jwt;
+package kr.co.ict.jwtdemo.member.jwt;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

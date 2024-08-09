@@ -1,4 +1,4 @@
-package kr.co.ict.jwtdemo.login;
+package kr.co.ict.jwtdemo.member.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -1,4 +1,4 @@
-package kr.co.ict.jwtdemo.auth;
+package kr.co.ict.jwtdemo.member.auth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,10 +9,11 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
-import kr.co.ict.jwtdemo.jwt.AuthenticationRequest;
-import kr.co.ict.jwtdemo.jwt.AuthenticationResponse;
-import kr.co.ict.jwtdemo.jwt.JwtTokenProvider;
-import kr.co.ict.jwtdemo.login.MemberLoginService;
+
+import kr.co.ict.jwtdemo.member.jwt.AuthenticationRequest;
+import kr.co.ict.jwtdemo.member.jwt.AuthenticationResponse;
+import kr.co.ict.jwtdemo.member.jwt.JwtTokenProvider;
+import kr.co.ict.jwtdemo.member.login.MemberLoginService;
 import kr.co.ict.jwtdemo.vo.MemberVO;
 
 

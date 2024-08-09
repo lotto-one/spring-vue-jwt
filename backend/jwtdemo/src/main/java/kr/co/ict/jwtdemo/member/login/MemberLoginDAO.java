@@ -1,4 +1,4 @@
-package kr.co.ict.jwtdemo.login;
+package kr.co.ict.jwtdemo.member.login;
 
 import org.apache.ibatis.annotations.Mapper;
 

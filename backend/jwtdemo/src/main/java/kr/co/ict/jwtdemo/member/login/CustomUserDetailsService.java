@@ -1,4 +1,4 @@
-package kr.co.ict.jwtdemo.login;
+package kr.co.ict.jwtdemo.member.login;
 
 import kr.co.ict.jwtdemo.vo.MemberVO;
 import org.springframework.beans.factory.annotation.Autowired;
